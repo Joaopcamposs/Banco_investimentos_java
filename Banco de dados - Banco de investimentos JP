@@ -1,0 +1,69 @@
+create table cliente(
+nconta varchar(300),
+senha varchar(300),
+nome varchar(300),
+cpf varchar(300),
+nascimento date);
+
+create table adm(
+nome varchar(300),
+login varchar(300),
+senha varchar(300));
+
+create table invest(
+ide integer,
+nconta varchar(300),
+saldo decimal(10,2),
+tipo varchar(300));
+			 
+create table extrato(
+ide integer,
+nconta varchar(300),
+valor decimal(10,2),
+descricao varchar(300),
+dataOp date,
+tipo varchar(300));			 		 
+
+create table contador(
+	cont integer);
+			 
+create table datta(
+datta date);
+			 
+create table listacontas(
+lista integer);
+
+			 
+			 
+insert into contador
+(cont) values (1);
+			 
+select * from contador;			 
+		 
+			 
+insert into datta
+(datta) values ('2017-07-01');
+
+select * from datta
+
+
+
+truncate table cliente;
+truncate table invest;
+truncate table extrato;
+truncate table contador;
+truncate table datta;
+truncate table listacontas;
+			 
+drop table invest;
+drop table extrato;
+			 
+UPDATE invest
+SET saldo = 1000
+WHERE nconta = '2'
+
+			 
+select * from cliente;
+select * from extrato;			 
+select * from invest;
+			 where saldo = 300.00 and tipo = 'lca'
